@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,100,400');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Georgia, Times, serif;
+    height: 100vh;
+    background: #333 
+    url('images/pexels-lee-campbell-115655.jpg') no-repeat center center / cover;
+    color: #ccc;
+    overflow: hidden;
+    background-blend-mode: overlay;
+    /* background: #333 url('https://image.ibb.co/n5A2HU/showcase.jpg') no-repeat center center / cover; */
+}
+
+span.text-type {
+    color: darkorange;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0 3rem;
+}
+h1, h2 {
+    font-weight: 300;
+    margin: 0.4rem;
+}
+h1 {
+    font-size: 3.5rem;
+}
+h2 {
+    font-size: 2rem;
+    color: rgb(165, 139, 139);
+}
+.text-type > .txt {
+    border-right: 0.2rem solid #777;
+}
+@media(min-width: 1200px) {
+    h1 {
+        font-size: 5rem;
+    }
+}
+@media(min-width: 800px) {
+    .container {
+        padding: 0 1rem;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media(min-width: 500px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Nav-Bar Settings */
+
+.nav-bar {
+    width: 90%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 180px;
+    cursor: pointer;
+    color: white;
+}
+
+.nav-bar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.nav-bar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.nav-bar ul li:hover::after {
+    width: 100%;
+}
+
+.nav-bar ul li .btn {
+    background: transparent;
+    color: slategray;
+    
+}
+
+
