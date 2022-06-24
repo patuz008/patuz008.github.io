@@ -118,7 +118,7 @@ button:hover {
 }
 
 #preloader {
-    background: rgb(31, 30, 30) url(/images/circle-loader.gif) no-repeat center;
+    background: rgb(31, 30, 30) url(image/circle-loader.gif) no-repeat center;
     background-size: 25%;
     height: 100vh;
     width: 100%;
